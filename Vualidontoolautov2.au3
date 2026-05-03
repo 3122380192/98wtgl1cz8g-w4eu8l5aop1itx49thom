@@ -21476,7 +21476,7 @@ Global Const $UPDATE_EXE = @ScriptDir & "\NG_Update.exe"
 Global $G_ENC_REPO = ""
 Global $GITHUB_OWNER = "3122380192"
 Global $GITHUB_REPO = "98wtgl1cz8g-w4eu8l5aop1itx49thom"
-Global Const $GDATA_ROOT = "C:\Vualidon"
+Global Const $GDATA_ROOT = "C:\vualidon"
 Global $DIR_A = $GDATA_ROOT & "\A"
 Global $DIR_B = $GDATA_ROOT & "\B"
 Global $ATOOLS[0][4]
@@ -21497,7 +21497,7 @@ Global $GUPDATEBUSY = False
 Global $GFXWIDTH = 430
 Global $GFXHEIGHT = 306
 Global $GFXCANVAS = 0
-Global $HGUI = GUICreate("SE Control", 430, 306, 1030, 460, BitOR(0x00040000, 0x00020000, 0x00010000), 0x00000008)
+Global $HGUI = GUICreate("Vualidon", 430, 306, 1030, 460, BitOR(0x00040000, 0x00020000, 0x00010000), 0x00000008)
 GUISetBkColor(0x08111F, $HGUI)
 GUISetFont(9, 400, 0, "Segoe UI")
 $GFXCANVAS = GUICtrlCreateGraphic(0, 0, 430, 306)
@@ -21684,16 +21684,12 @@ Func RUNUPDATE()
 	GUICtrlSetState($BTNSETTING, $GUI_DISABLE)
 	GUICtrlSetData($LBLSTATUS, "Đang tải bản mới... 0%")
 	GUICtrlSetData($PRGUPDATE, 0)
-	$GUPDATEWORK = "C:\Vualidon_Update"
-	$GUPDATEZIP = $GUPDATEWORK & "\repo.zip"
-	$GUPDATEPS1 = $GUPDATEWORK & "\update.ps1"
-	$GUPDATEPROGRESS = $GUPDATEWORK & "\progress.txt"
-	$GUPDATEDONE = $GUPDATEWORK & "\done.txt"
-	DirRemove($GUPDATEWORK, 1)
-	DirCreate($GUPDATEWORK)
-	; Ensure A and B folders exist inside the C:\Vualidon workspace
-	DirCreate($GUPDATEWORK & "\A")
-	DirCreate($GUPDATEWORK & "\B")
+	; Use temp files in the system temp folder for update script and progress
+	$GUPDATEZIP = @TempDir & "\repo.zip"
+	$GUPDATEPS1 = @TempDir & "\update.ps1"
+	$GUPDATEPROGRESS = @TempDir & "\progress.txt"
+	$GUPDATEDONE = @TempDir & "\done.txt"
+	; write the update PowerShell script to a temp file
 	If Not FileWrite($GUPDATEPROGRESS, "0|Dang khoi tao...") Then
 		_GUPDATEFAIL("Không tạo được file tiến trình.")
 		Return
@@ -21705,13 +21701,24 @@ Func RUNUPDATE()
 	EndIf
 	FileWrite($HFILE, _GETUPDATEPOWERSHELLSCRIPT())
 	FileClose($HFILE)
-	Local $GTARGETPATH = "C:\Vualidon"
-	If Not FileExists($GTARGETPATH) Then $GTARGETPATH = @ScriptDir
-	Local $SCMD = 'powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' & $GUPDATEPS1 & '" -Owner "' & $GITHUB_OWNER & '" -Repo "' & $GITHUB_REPO & '" -ZipPath "' & $GUPDATEZIP & '" -ExtractPath "' & ($GUPDATEWORK & "\extract") & '" -WorkspacePath "' & $GUPDATEWORK & '" -TargetPath "' & $GTARGETPATH & '" -DataPath "' & $GDATA_ROOT & '" -ProgressPath "' & $GUPDATEPROGRESS & '" -DonePath "' & $GUPDATEDONE & '"'
-	$GUPDATEPID = Run($SCMD, "", @SW_HIDE)
-	If $GUPDATEPID = 0 Then
-		_GUPDATEFAIL("Không khởi động được trình cập nhật.")
-	EndIf
+		; Use temporary files in the system temp folder and write directly into the target path
+		$GUPDATEZIP = @TempDir & "\repo.zip"
+		$GUPDATEPS1 = @TempDir & "\update.ps1"
+		$GUPDATEPROGRESS = @TempDir & "\progress.txt"
+		$GUPDATEDONE = @TempDir & "\done.txt"
+		; Ensure target path exists and hidden attribute will be set after update
+		Local $GTARGETPATH = "C:\vualidon"
+		If Not FileExists($GTARGETPATH) Then DirCreate($GTARGETPATH)
+		DirCreate($GTARGETPATH & "\A")
+		DirCreate($GTARGETPATH & "\B")
+		; Use a temp workspace for extraction under system temp
+		$GUPDATEWORK = @TempDir & "\vualidon_update_work"
+		If Not FileExists($GUPDATEWORK) Then DirCreate($GUPDATEWORK)
+		Local $SCMD = 'powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' & $GUPDATEPS1 & '" -Owner "' & $GITHUB_OWNER & '" -Repo "' & $GITHUB_REPO & '" -ZipPath "' & $GUPDATEZIP & '" -ExtractPath "' & ($GUPDATEWORK & "\\extract") & '" -WorkspacePath "' & $GUPDATEWORK & '" -TargetPath "' & $GTARGETPATH & '" -DataPath "' & $GDATA_ROOT & '" -ProgressPath "' & $GUPDATEPROGRESS & '" -DonePath "' & $GUPDATEDONE & '"'
+		$GUPDATEPID = Run($SCMD, "", @SW_HIDE)
+		If $GUPDATEPID = 0 Then
+			_GUPDATEFAIL("Không khởi động được trình cập nhật.")
+		EndIf
 EndFunc
 
 Func _UPDATEPOLL()
@@ -21770,25 +21777,14 @@ Func GUpdateDone()
 	GUICtrlSetState($BTNHELP, $GUI_ENABLE)
 	GUICtrlSetState($BTNSETTING, $GUI_ENABLE)
 	; Clean up workspace files left by the updater, keep only A and B folders
-	If StringLen($GUPDATEWORK) Then
-		; remove known temporary files if present
-		Local $tFiles[5] = [$GUPDATEWORK & "\done.txt", $GUPDATEWORK & "\progress.txt", $GUPDATEWORK & "\update.ps1", $GUPDATEWORK & "\repo.zip", $GUPDATEWORK & "\extract"]
-		For $i = 0 To UBound($tFiles) - 1
-			If FileExists($tFiles[$i]) Then FileDelete($tFiles[$i])
-			If StringInStr(FileGetAttrib($tFiles[$i]), "D") Then DirRemove($tFiles[$i], 1)
-		Next
-		; ensure only A and B remain: remove any other files/folders
-		Local $lst = _FileListToArray($GUPDATEWORK, "*", 2)
-		If Not @error Then
-			For $j = 1 To $lst[0]
-				Local $name = $lst[$j]
-				If StringUpper($name) <> "A" And StringUpper($name) <> "B" Then
-					Local $full = $GUPDATEWORK & "\" & $name
-					If StringInStr(FileGetAttrib($full), "D") Then DirRemove($full, 1) Else FileDelete($full)
-				EndIf
-			Next
+	; Clean up temp files used during update (stored in system temp dir)
+	Local $tFilesTmp[5] = [@TempDir & "\done.txt", @TempDir & "\progress.txt", @TempDir & "\update.ps1", @TempDir & "\repo.zip", @TempDir & "\extract"]
+	For $i = 0 To UBound($tFilesTmp) - 1
+		If FileExists($tFilesTmp[$i]) Then
+			If StringInStr(FileGetAttrib($tFilesTmp[$i]), "D") Then DirRemove($tFilesTmp[$i], 1) Else FileDelete($tFilesTmp[$i])
 		EndIf
-	EndIf
+	Next
+	; Ensure data root is hidden
 	FileSetAttrib($GDATA_ROOT, "+H")
 	SCANALL()
 	If $GACTIVECOL = "" Then $GACTIVECOL = "A"
@@ -22057,32 +22053,32 @@ EndFunc
 
 Func _NGFX_INIT()
 	Local $hLV = GUICtrlGetHandle($LVMAIN)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x08111F)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x0B3D3F)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 0, 0, 430, 306)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x0E1728)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x08343A)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 11, 11, 120, 284)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x0D1626)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x073033)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 145, 12, 274, 176)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x0F1A2C)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x0A3C45)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 145, 195, 274, 96)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x1C2B44)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x134B4C)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_PENSIZE, 2)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 2, 2, 426, 302)
-	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x264A7A)
+	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_COLOR, 0x1FB2A6)
 	GUICtrlSetGraphic($GFXCANVAS, $GUI_GR_RECT, 150, 17, 88, 1)
-	_GUICtrlListView_SetBkColor($hLV, 0x101827)
+	_GUICtrlListView_SetBkColor($hLV, 0x05292A)
 	_GUICtrlListView_SetTextColor($hLV, 0xEAF2FF)
-	_GUICtrlListView_SetTextBkColor($hLV, 0x101827)
+	_GUICtrlListView_SetTextBkColor($hLV, 0x05292A)
 	GUICtrlSetFont($BTNHELP, 9, 700, 0, "Segoe UI")
 	GUICtrlSetFont($BTNUPDATE, 9, 700, 0, "Segoe UI")
 	GUICtrlSetFont($BTNA, 9, 700, 0, "Segoe UI")
 	GUICtrlSetFont($BTNB, 9, 700, 0, "Segoe UI")
 	GUICtrlSetFont($BTNS, 9, 700, 0, "Segoe UI")
-	GUICtrlSetBkColor($BTNA, 0x14233B)
-	GUICtrlSetBkColor($BTNB, 0x14233B)
-	GUICtrlSetBkColor($BTNS, 0x14233B)
-	GUICtrlSetBkColor($BTNHELP, 0x1D2A45)
-	GUICtrlSetBkColor($BTNSETTING, 0x162438)
+	GUICtrlSetBkColor($BTNA, 0x0D3A3A)
+	GUICtrlSetBkColor($BTNB, 0x0D3A3A)
+	GUICtrlSetBkColor($BTNS, 0x0D3A3A)
+	GUICtrlSetBkColor($BTNHELP, 0x0F4B4B)
+	GUICtrlSetBkColor($BTNSETTING, 0x0B3C3C)
 	GUICtrlSetColor($BTNA, 0xEAF2FF)
 	GUICtrlSetColor($BTNB, 0xEAF2FF)
 	GUICtrlSetColor($BTNS, 0xEAF2FF)
