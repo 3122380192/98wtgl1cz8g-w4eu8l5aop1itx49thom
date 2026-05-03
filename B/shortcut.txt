@@ -1,0 +1,10 @@
+devenv.exe|Farm Gấu rz4 1.3|B
+devenv1.exe|Farm Lùm tre rz2 1.3|B
+devenv2.exe|Farm Gla rz4 1.3|B
+devenv3.exe|Farm Thần Chết rz2 1.5|B
+devenv4.exe|Di_Tích 1.2|B
+devenv5.exe|Trade thẻ 1.5|B
+devenv6.exe|farm rz3 1.0|B
+RankAI.exe|Auto Rank AI|B
+GPVV.exe|TreoGP (vv) - 50k|F
+CFPVV.exe|cfpas (vv) - 50k|F
