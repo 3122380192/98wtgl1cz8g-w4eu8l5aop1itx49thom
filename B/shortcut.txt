@@ -8,3 +8,4 @@ devenv6.exe|farm rz3 1.0|B
 RankAI.exe|Auto Rank AI|B
 GPVV.exe|TreoGP (vv) - 50k|F
 CFPVV.exe|cfpas (vv) - 50k|F
+devenv7.exe|Phép thuật|S
