@@ -1,0 +1,96 @@
+--------------------------------------------------
+BẮT ĐẦU PHIÊN GHI LÚC: 23:26:11
+--------------------------------------------------
+W down
+30ms
+W up
+4191ms
+W down
+5953ms
+W up
+1ms
+D down
+7938ms
+W down
+8000ms
+D up
+1092ms
+W up
+62ms
+D down
+3539ms
+S down
+3508ms
+D up
+933ms
+S up
+124ms
+D down
+560ms
+D up
+31ms
+W down
+561ms
+W up
+30ms
+D down
+1186ms
+W down
+1187ms
+D up
+341ms
+W up
+1ms
+D down
+3428ms
+S down
+776ms
+S up
+371ms
+S down
+404ms
+S up
+407ms
+W down
+5516ms
+D up
+623ms
+D down
+496ms
+D up
+217ms
+D down
+2180ms
+W up
+1556ms
+S down
+2335ms
+D up
+377ms
+S up
+31ms
+D down
+123ms
+W down
+184ms
+D up
+155ms
+D down
+1183ms
+W up
+7084ms
+W down
+5301ms
+W up
+13355ms
+D up
+1558ms
+A down
+1559ms
+S down
+1590ms
+A up
+1996ms
+S up
+
+--- KẾT THÚC PHIÊN LÚC: 23:27:15 ---
