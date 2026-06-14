@@ -1,0 +1,312 @@
+[2026/06/01 00:00:03] [INFO] Call giant #27
+[2026/06/01 00:00:15] [INFO] Call giant #27
+[2026/06/01 00:00:28] [INFO] Call giant #27
+[2026/06/01 00:00:40] [INFO] Call giant #27
+[2026/06/01 00:00:52] [INFO] Call giant #27
+[2026/06/01 00:01:04] [INFO] Call giant #27
+[2026/06/01 00:01:17] [INFO] Call giant #27
+[2026/06/01 00:01:29] [INFO] Call giant #27
+[2026/06/01 00:01:30] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:01:42] [INFO] Call giant #27
+[2026/06/01 00:01:53] [INFO] Call giant #27
+[2026/06/01 00:02:01] [INFO] nhấn H để hồi sinh #45
+[2026/06/01 00:02:01] [INFO] chết #39
+[2026/06/01 00:02:10] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:02:21] [INFO] Call giant #27
+[2026/06/01 00:02:30] [INFO] Updatetimegui return hettime #32
+[2026/06/01 00:02:30] [INFO] đọc cách thoát trận #48
+[2026/06/01 00:02:30] [INFO] thoát binh thường #50
+[2026/06/01 00:02:30] [INFO] Thoát bằng ESC() #20
+[2026/06/01 00:02:33] [INFO] chờ ra sảnh #3
+[2026/06/01 00:02:33] [INFO]  
+---------------------------
+Bắt đầu trận mới MapDoc
+[2026/06/01 00:02:33] [INFO] hàm where #10
+[2026/06/01 00:02:34] [INFO] Đang trong phòng #11
+[2026/06/01 00:02:34] [INFO] Bắt đầu trận #12
+[2026/06/01 00:02:49] [INFO] đã vào trận #13
+[2026/06/01 00:02:49] [INFO] Về rz2
+[2026/06/01 00:02:49] [INFO] Trở về rz2 #21
+[2026/06/01 00:03:02] [INFO] da ve rz2
+[2026/06/01 00:03:02] [INFO] Nhấn 2 lần nút ` để bật lại map #8
+[2026/06/01 00:03:02] [INFO] Đi săn Doc
+[2026/06/01 00:03:02] [INFO]  di chuyển tới map Vườn #24
+[2026/06/01 00:04:08] [INFO] hàm checkingame #9
+[2026/06/01 00:04:09] [INFO] Bắt đàu gọi boss
+[2026/06/01 00:04:09] [INFO] picklevelboss #25
+[2026/06/01 00:04:29] [INFO] Call giant #27
+[2026/06/01 00:04:50] [INFO] Call giant #27
+[2026/06/01 00:05:10] [INFO] Call giant #27
+[2026/06/01 00:05:29] [INFO] Call giant #27
+[2026/06/01 00:05:49] [INFO] Call giant #27
+[2026/06/01 00:06:05] [INFO] Call giant #27
+[2026/06/01 00:06:22] [INFO] Call giant #27
+[2026/06/01 00:06:38] [INFO] Call giant #27
+[2026/06/01 00:06:47] [INFO] chết 1 #46
+[2026/06/01 00:06:47] [INFO] chết #39
+[2026/06/01 00:06:49] [INFO] chết 1 #46
+[2026/06/01 00:06:49] [INFO] chết 1 #46
+[2026/06/01 00:06:50] [INFO] chết 1 #46
+[2026/06/01 00:06:59] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:07:09] [INFO] Call giant #27
+[2026/06/01 00:07:25] [INFO] Call giant #27
+[2026/06/01 00:07:26] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:07:41] [INFO] Call giant #27
+[2026/06/01 00:07:57] [INFO] Call giant #27
+[2026/06/01 00:08:12] [INFO] Call giant #27
+[2026/06/01 00:08:27] [INFO] Call giant #27
+[2026/06/01 00:08:48] [INFO] Call giant #27
+[2026/06/01 00:09:09] [INFO] Call giant #27
+[2026/06/01 00:09:24] [INFO] Call giant #27
+[2026/06/01 00:09:42] [INFO] Call giant #27
+[2026/06/01 00:09:59] [INFO] Call giant #27
+[2026/06/01 00:10:17] [INFO] Call giant #27
+[2026/06/01 00:11:10] [INFO] chết 1 #46
+[2026/06/01 00:11:10] [INFO] chết #39
+[2026/06/01 00:11:11] [INFO] chết 1 #46
+[2026/06/01 00:11:12] [INFO] chết 1 #46
+[2026/06/01 00:11:12] [INFO] chết 1 #46
+[2026/06/01 00:11:23] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:11:34] [INFO] Call giant #27
+[2026/06/01 00:11:49] [INFO] Call giant #27
+[2026/06/01 00:12:07] [INFO] Call giant #27
+[2026/06/01 00:12:22] [INFO] Call giant #27
+[2026/06/01 00:12:39] [INFO] Call giant #27
+[2026/06/01 00:12:54] [INFO] Call giant #27
+[2026/06/01 00:13:12] [INFO] Call giant #27
+[2026/06/01 00:13:27] [INFO] Call giant #27
+[2026/06/01 00:13:43] [INFO] Call giant #27
+[2026/06/01 00:13:58] [INFO] Call giant #27
+[2026/06/01 00:14:14] [INFO] Call giant #27
+[2026/06/01 00:14:29] [INFO] Call giant #27
+[2026/06/01 00:14:43] [INFO] Call giant #27
+[2026/06/01 00:14:59] [INFO] Call giant #27
+[2026/06/01 00:15:13] [INFO] Call giant #27
+[2026/06/01 00:15:28] [INFO] Call giant #27
+[2026/06/01 00:15:43] [INFO] Call giant #27
+[2026/06/01 00:15:57] [INFO] Call giant #27
+[2026/06/01 00:16:13] [INFO] Call giant #27
+[2026/06/01 00:16:18] [INFO] chết 1 #46
+[2026/06/01 00:16:18] [INFO] chết #39
+[2026/06/01 00:16:31] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:16:41] [INFO] Call giant #27
+[2026/06/01 00:16:57] [INFO] Call giant #27
+[2026/06/01 00:17:13] [INFO] Call giant #27
+[2026/06/01 00:17:27] [INFO] Call giant #27
+[2026/06/01 00:17:41] [INFO] Call giant #27
+[2026/06/01 00:17:57] [INFO] Call giant #27
+[2026/06/01 00:18:10] [INFO] Call giant #27
+[2026/06/01 00:18:26] [INFO] Call giant #27
+[2026/06/01 00:18:42] [INFO] Call giant #27
+[2026/06/01 00:18:55] [INFO] Call giant #27
+[2026/06/01 00:19:11] [INFO] Call giant #27
+[2026/06/01 00:19:27] [INFO] Call giant #27
+[2026/06/01 00:19:41] [INFO] Call giant #27
+[2026/06/01 00:19:56] [INFO] Call giant #27
+[2026/06/01 00:20:12] [INFO] Call giant #27
+[2026/06/01 00:20:28] [INFO] Call giant #27
+[2026/06/01 00:20:41] [INFO] Call giant #27
+[2026/06/01 00:20:57] [INFO] Call giant #27
+[2026/06/01 00:21:10] [INFO] Call giant #27
+[2026/06/01 00:21:25] [INFO] Call giant #27
+[2026/06/01 00:21:31] [INFO] chết 1 #46
+[2026/06/01 00:21:31] [INFO] chết #39
+[2026/06/01 00:21:44] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:21:55] [INFO] Call giant #27
+[2026/06/01 00:22:11] [INFO] Call giant #27
+[2026/06/01 00:22:25] [INFO] Call giant #27
+[2026/06/01 00:22:37] [INFO] Call giant #27
+[2026/06/01 00:22:51] [INFO] Call giant #27
+[2026/06/01 00:23:03] [INFO] Call giant #27
+[2026/06/01 00:23:16] [INFO] Call giant #27
+[2026/06/01 00:23:29] [INFO] Call giant #27
+[2026/06/01 00:23:42] [INFO] Call giant #27
+[2026/06/01 00:23:54] [INFO] Call giant #27
+[2026/06/01 00:24:07] [INFO] Call giant #27
+[2026/06/01 00:24:19] [INFO] Call giant #27
+[2026/06/01 00:24:32] [INFO] Call giant #27
+[2026/06/01 00:24:44] [INFO] Call giant #27
+[2026/06/01 00:24:57] [INFO] Call giant #27
+[2026/06/01 00:25:10] [INFO] Call giant #27
+[2026/06/01 00:25:23] [INFO] Call giant #27
+[2026/06/01 00:25:35] [INFO] Call giant #27
+[2026/06/01 00:25:47] [INFO] Call giant #27
+[2026/06/01 00:25:53] [INFO] chết 1 #46
+[2026/06/01 00:25:53] [INFO] chết #39
+[2026/06/01 00:25:55] [INFO] chết 1 #46
+[2026/06/01 00:25:55] [INFO] chết 1 #46
+[2026/06/01 00:26:05] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:26:16] [INFO] Call giant #27
+[2026/06/01 00:26:28] [INFO] Call giant #27
+[2026/06/01 00:26:29] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:26:40] [INFO] Call giant #27
+[2026/06/01 00:26:41] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:26:52] [INFO] Call giant #27
+[2026/06/01 00:26:53] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:27:04] [INFO] Call giant #27
+[2026/06/01 00:27:05] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:27:16] [INFO] Call giant #27
+[2026/06/01 00:27:29] [INFO] Call giant #27
+[2026/06/01 00:27:41] [INFO] Call giant #27
+[2026/06/01 00:27:53] [INFO] Call giant #27
+[2026/06/01 00:28:05] [INFO] Call giant #27
+[2026/06/01 00:28:17] [INFO] Call giant #27
+[2026/06/01 00:28:18] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:28:29] [INFO] Call giant #27
+[2026/06/01 00:28:41] [INFO] Call giant #27
+[2026/06/01 00:28:42] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:28:53] [INFO] Call giant #27
+[2026/06/01 00:29:05] [INFO] Call giant #27
+[2026/06/01 00:29:06] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:29:17] [INFO] Call giant #27
+[2026/06/01 00:29:29] [INFO] Call giant #27
+[2026/06/01 00:29:30] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:29:41] [INFO] Call giant #27
+[2026/06/01 00:29:53] [INFO] Call giant #27
+[2026/06/01 00:29:54] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:30:05] [INFO] Call giant #27
+[2026/06/01 00:30:17] [INFO] Call giant #27
+[2026/06/01 00:30:18] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:30:23] [INFO] nhấn H để hồi sinh #45
+[2026/06/01 00:30:23] [INFO] chết #39
+[2026/06/01 00:30:33] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:30:44] [INFO] Call giant #27
+[2026/06/01 00:30:56] [INFO] Call giant #27
+[2026/06/01 00:31:08] [INFO] Call giant #27
+[2026/06/01 00:31:09] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:31:19] [INFO] Call giant #27
+[2026/06/01 00:31:31] [INFO] Call giant #27
+[2026/06/01 00:31:43] [INFO] Call giant #27
+[2026/06/01 00:31:55] [INFO] Call giant #27
+[2026/06/01 00:31:56] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:32:07] [INFO] Call giant #27
+[2026/06/01 00:32:19] [INFO] Call giant #27
+[2026/06/01 00:32:20] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:32:30] [INFO] Call giant #27
+[2026/06/01 00:32:42] [INFO] Call giant #27
+[2026/06/01 00:32:54] [INFO] Call giant #27
+[2026/06/01 00:33:06] [INFO] Call giant #27
+[2026/06/01 00:33:07] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:33:18] [INFO] Call giant #27
+[2026/06/01 00:33:30] [INFO] Call giant #27
+[2026/06/01 00:33:31] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:33:43] [INFO] Call giant #27
+[2026/06/01 00:33:54] [INFO] Call giant #27
+[2026/06/01 00:34:07] [INFO] Call giant #27
+[2026/06/01 00:34:18] [INFO] Call giant #27
+[2026/06/01 00:34:30] [INFO] Call giant #27
+[2026/06/01 00:34:37] [INFO] nhấn H để hồi sinh #45
+[2026/06/01 00:34:37] [INFO] chết #39
+[2026/06/01 00:34:50] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:35:01] [INFO] Call giant #27
+[2026/06/01 00:35:12] [INFO] Call giant #27
+[2026/06/01 00:35:25] [INFO] Call giant #27
+[2026/06/01 00:35:37] [INFO] Call giant #27
+[2026/06/01 00:35:49] [INFO] Call giant #27
+[2026/06/01 00:36:00] [INFO] Call giant #27
+[2026/06/01 00:36:12] [INFO] Call giant #27
+[2026/06/01 00:36:13] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:36:24] [INFO] Call giant #27
+[2026/06/01 00:36:36] [INFO] Call giant #27
+[2026/06/01 00:36:37] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:36:48] [INFO] Call giant #27
+[2026/06/01 00:37:00] [INFO] Call giant #27
+[2026/06/01 00:37:05] [INFO] Updatetimegui return hettime #32
+[2026/06/01 00:37:05] [INFO] đọc cách thoát trận #48
+[2026/06/01 00:37:05] [INFO] thoát binh thường #50
+[2026/06/01 00:37:05] [INFO] Thoát bằng ESC() #20
+[2026/06/01 00:37:09] [INFO] chờ ra sảnh #3
+[2026/06/01 00:37:09] [INFO]  
+---------------------------
+Bắt đầu trận mới MapDoc
+[2026/06/01 00:37:09] [INFO] hàm where #10
+[2026/06/01 00:37:09] [INFO] Đang trong phòng #11
+[2026/06/01 00:37:09] [INFO] Bắt đầu trận #12
+[2026/06/01 00:37:27] [INFO] đã vào trận #13
+[2026/06/01 00:37:27] [INFO] Về rz2
+[2026/06/01 00:37:27] [INFO] Trở về rz2 #21
+[2026/06/01 00:37:40] [INFO] da ve rz2
+[2026/06/01 00:37:40] [INFO] Nhấn 2 lần nút ` để bật lại map #8
+[2026/06/01 00:37:40] [INFO] Đi săn Doc
+[2026/06/01 00:37:40] [INFO]  di chuyển tới map Vườn #24
+[2026/06/01 00:38:46] [INFO] hàm checkingame #9
+[2026/06/01 00:38:47] [INFO] Bắt đàu gọi boss
+[2026/06/01 00:38:47] [INFO] picklevelboss #25
+[2026/06/01 00:39:07] [INFO] Call giant #27
+[2026/06/01 00:39:26] [INFO] Call giant #27
+[2026/06/01 00:39:44] [INFO] Call giant #27
+[2026/06/01 00:40:03] [INFO] Call giant #27
+[2026/06/01 00:40:22] [INFO] Call giant #27
+[2026/06/01 00:40:41] [INFO] Call giant #27
+[2026/06/01 00:41:00] [INFO] Call giant #27
+[2026/06/01 00:41:09] [INFO] chết 1 #46
+[2026/06/01 00:41:09] [INFO] chết #39
+[2026/06/01 00:41:11] [INFO] chết 1 #46
+[2026/06/01 00:41:11] [INFO] chết 1 #46
+[2026/06/01 00:41:21] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:41:32] [INFO] Call giant #27
+[2026/06/01 00:41:49] [INFO] Call giant #27
+[2026/06/01 00:42:05] [INFO] Call giant #27
+[2026/06/01 00:42:21] [INFO] Call giant #27
+[2026/06/01 00:42:22] [INFO] đã gọi boss nhưng bảng callboss không biến mất #29
+[2026/06/01 00:42:37] [INFO] Call giant #27
+[2026/06/01 00:42:53] [INFO] Call giant #27
+[2026/06/01 00:43:08] [INFO] Call giant #27
+[2026/06/01 00:43:24] [INFO] Call giant #27
+[2026/06/01 00:43:42] [INFO] Call giant #27
+[2026/06/01 00:43:51] [INFO] chết 1 #46
+[2026/06/01 00:43:51] [INFO] chết #39
+[2026/06/01 00:43:52] [INFO] chết 1 #46
+[2026/06/01 00:43:53] [INFO] chết 1 #46
+[2026/06/01 00:44:02] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:44:12] [INFO] Call giant #27
+[2026/06/01 00:44:27] [INFO] Call giant #27
+[2026/06/01 00:44:43] [INFO] Call giant #27
+[2026/06/01 00:44:58] [INFO] Call giant #27
+[2026/06/01 00:45:13] [INFO] Call giant #27
+[2026/06/01 00:45:30] [INFO] Call giant #27
+[2026/06/01 00:45:48] [INFO] Call giant #27
+[2026/06/01 00:46:06] [INFO] Call giant #27
+[2026/06/01 00:46:24] [INFO] Call giant #27
+[2026/06/01 00:46:41] [INFO] Call giant #27
+[2026/06/01 00:46:58] [INFO] Call giant #27
+[2026/06/01 00:47:14] [INFO] Call giant #27
+[2026/06/01 00:47:30] [INFO] Call giant #27
+[2026/06/01 00:47:45] [INFO] Call giant #27
+[2026/06/01 00:47:51] [INFO] chết 1 #46
+[2026/06/01 00:47:51] [INFO] chết #39
+[2026/06/01 00:48:06] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:48:17] [INFO] Call giant #27
+[2026/06/01 00:48:32] [INFO] Call giant #27
+[2026/06/01 00:48:47] [INFO] Call giant #27
+[2026/06/01 00:49:02] [INFO] Call giant #27
+[2026/06/01 00:49:18] [INFO] Call giant #27
+[2026/06/01 00:49:32] [INFO] Call giant #27
+[2026/06/01 00:49:46] [INFO] Call giant #27
+[2026/06/01 00:50:01] [INFO] Call giant #27
+[2026/06/01 00:50:16] [INFO] Call giant #27
+[2026/06/01 00:50:31] [INFO] Call giant #27
+[2026/06/01 00:50:45] [INFO] Call giant #27
+[2026/06/01 00:51:00] [INFO] Call giant #27
+[2026/06/01 00:51:16] [INFO] Call giant #27
+[2026/06/01 00:51:30] [INFO] Call giant #27
+[2026/06/01 00:51:46] [INFO] Call giant #27
+[2026/06/01 00:52:00] [INFO] Call giant #27
+[2026/06/01 00:52:16] [INFO] Call giant #27
+[2026/06/01 00:52:31] [INFO] Call giant #27
+[2026/06/01 00:52:47] [INFO] Call giant #27
+[2026/06/01 00:53:01] [INFO] Call giant #27
+[2026/06/01 00:53:07] [INFO] chết 1 #46
+[2026/06/01 00:53:07] [INFO] chết #39
+[2026/06/01 00:53:08] [INFO] chết 1 #46
+[2026/06/01 00:53:09] [INFO] chết 1 #46
+[2026/06/01 00:53:21] [INFO] trở về trụ sau khi chêt #33
+[2026/06/01 00:53:32] [INFO] Call giant #27
+[2026/06/01 00:53:48] [INFO] Call giant #27
+[2026/06/01 00:54:03] [INFO] Call giant #27
+[2026/06/01 00:54:19] [INFO] Call giant #27
+[2026/06/01 00:54:32] [INFO] Call giant #27
+[2026/06/01 00:54:48] [INFO] Call giant #27
+[2026/06/01 00:55:03] [INFO] Call giant #27
+[2026/06/01 00:55:18] [INFO] Call giant #27
+[2026/06/01 00:55:31] [INFO] Call giant #27

@@ -1,0 +1,15 @@
+[2026/06/01 00:40:45] [INFO]  
+---------------------------
+Bắt đầu trận mới combo
+[2026/06/01 00:40:45] [INFO] hàm where #10
+[2026/06/01 00:40:46] [INFO] Đang ở public #16
+[2026/06/01 00:40:47] [INFO] chọn server #17
+[2026/06/01 00:40:57] [INFO] chọn kênh #18
+[2026/06/01 00:40:58] [INFO] tiến hành tạo phòng #19
+[2026/06/01 00:41:01] [INFO] Đang trong phòng #11
+[2026/06/01 00:41:25] [INFO] Đang trong phòng #11
+[2026/06/01 00:41:25] [INFO] Bắt đầu trận #12
+[2026/06/01 00:42:00] [INFO] đã vào trận #13
+[2026/06/01 00:42:00] [INFO] Về rz2
+[2026/06/01 00:42:00] [INFO] Trở về rz2
+[2026/06/01 00:43:00] [INFO] Watchdog: Không phát hiện hoạt động auto trong 1 phút. Đang kill CROSSFIRE.
