@@ -1,0 +1,48 @@
+--------------------------------------------------
+BẮT ĐẦU PHIÊN GHI LÚC: 21:05:24
+--------------------------------------------------
+D down
+5725ms
+D up
+622ms
+S down
+5237ms
+S up
+561ms
+S down
+589ms
+S up
+655ms
+D down
+5732ms
+D up
+154ms
+S down
+402ms
+A down
+187ms
+A up
+1091ms
+S up
+625ms
+D down
+2959ms
+S down
+2427ms
+D up
+867ms
+D down
+1146ms
+S up
+1026ms
+W down
+1336ms
+D up
+929ms
+D down
+1237ms
+W up
+5704ms
+D up
+
+--- KẾT THÚC PHIÊN LÚC: 21:06:03 ---
